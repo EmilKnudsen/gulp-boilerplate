@@ -7,6 +7,7 @@
     "all": "npm run clean && npm start",
     "clean": "rm -Rf dist",
     "start": "gulp",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

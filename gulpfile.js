@@ -1,4 +1,4 @@
-var {watch, parallel, task} = require("gulp");
+var {watch, parallel, task, series} = require("gulp");
 // var htmlmin = require("gulp-htmlmin");
 // var sass = require("gulp-sass");
 // var cleancss = require("gulp-clean-css");
@@ -46,3 +46,4 @@ function serve() {
 }
 
 task("default", parallel(serve, watchEverything));
+task("build", series(moveHTML, processSass));
